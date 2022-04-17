@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter-Regular'), url('Inter-Black.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter-Regular'), url('../fonts/Inter-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
