@@ -1,0 +1,7 @@
+.cover__text {
+  position: absolute;
+  z-index: 10;
+  top: 245px;
+  width: 560px;
+  left: 312px;
+}

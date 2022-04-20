@@ -10,9 +10,9 @@
 @import url(../blocks/header/header__link/header__link.css);
                                                                     /* LEAD */
 @import url(../blocks/lead/lead.css);
+@import url(../blocks/lead/__container/lead__container.css);
 @import url(../blocks/lead/__title/lead__title.css);
 @import url(../blocks/lead/__subtitle/lead__subtitle.css);
-@import url(../blocks/lead/__container/lead__container.css);
 @import url(../blocks/lead/__image/lead__image.css);
 @import url(../blocks/lead/__caption/lead__caption.css);
                                                                     /* INTRO */
@@ -27,30 +27,148 @@
 @import url(../blocks/places/places.css);
 @import url(../blocks/place/place.css);
 @import url(../blocks/place/__item/place__item.css);
+@import url(../blocks/place/__item/_website/place__item_website.css);
 @import url(../blocks/place/__title/place__title.css);
 @import url(../blocks/place/__image/place__image.css);
 @import url(../blocks/place/__website/place__website.css);
 @import url(../blocks/place/__url-heading/place__url-heading.css);
 @import url(../blocks/place/__link/place__link.css);
 @import url(../blocks/place/__paragraph/place__paragraph.css);
+                                                                    /* cover */
+@import url(../blocks/cover/cover.css);
+@import url(../blocks/cover/__text/cover__text.css);
+@import url(../blocks/cover/__title/cover__title.css);
+@import url(../blocks/cover/__subtitle/cover_subtitle.css);
+@import url(../blocks/cover/__background/cover__background.css);
+@import url(../blocks/cover/__overlay/cover__overlay.css);
+                                                                    /* footer */
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/__link/footer__link.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+
+/* min 1280
+min 1024 max 1280
+body 100%max-width @minw 1280px */
 
 
-.grid {
-  width: 500px;
-  height: 500px;
-  border: 3px solid white;
-  margin: 100px auto;
-  display: grid;
-  grid-template-rows: repeat(2,auto);
-  grid-template-columns: repeat(2, auto);
-  gap: 15px;
+
+
+
+@media (max-width: 1280px) {
+
+  .page {
+    max-width: 1024px;
+  }
+
+  .lead__image {
+    width: 928px;
+    height: 580px;
+  }
+
+  .photo-grid {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .photo-grid__item {
+    width: 300px;
+    height: 225px;
+  }
+
+  .cover {
+    width: 1024px;
+    height: 640px;
+    padding: 12px;
+  }
+  .cover__background {
+    width: 1024px;
+    height: 640px;
+    left: 0;
+  }
+
+  .cover__overlay {
+    width: 1024px;
+    height: 640px;
+    left: 0;
+  }
+
+  /* .lead {
+    max-width: 1024px;
+  }
+  .header {
+    height: 128px;
+  } */
 }
-.item {
-  border: 3px solid green;
+
+
+
+
+
+@media (max-width: 1024px) {
+  .page {
+    max-width: 768px;
+  }
+
+  .lead__image {
+    width: 768px;
+    height: 480px;
+  }
+
+  .photo-grid {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 24px 92px;
+
+  }
+
+  .photo-grid__item {
+    width: 352px;
+    height: 264px;
+  }
+
+  .cover {
+    width: 768px;
+    height: 480px;
+    padding: 12px;
+  }
+  .cover__background {
+    width: 768px;
+    height: 480px;
+  }
+
+  .cover__overlay {
+    width: 768px;
+    height: 480px;
+  }
 }
 
-.ex {
-  align-self: start;
+
+
+
+
+@media (max-width: 768px) {
+  .page {
+    max-width: 320px;
+  }
+  .lead__image {
+    width: 320px;
+    height: 200px;
+  }
+
+  .photo-grid {
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+    padding: 0 16px 92px;
+
+  }
+
+  .photo-grid__item {
+    width: 288px;
+    height: 216px;
+  }
 
 }
 
@@ -58,6 +176,40 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 425px) {
+  .page {
+    max-width: 320px;
+  }
+
+  .lead__image {
+    width: 320px;
+    height: 200px;
+  }
+
+  .photo-grid {
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+    padding: 0 16px 92px;
+
+  }
+
+  .photo-grid__item {
+    width: 288px;
+    height: 216px;
+  }
+} */
 
 
 
