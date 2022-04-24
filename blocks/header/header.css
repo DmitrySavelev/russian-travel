@@ -1,5 +1,24 @@
 .header {
   display: flex;
   position: relative;
-  height: 136px; 
+  min-height: 136px;
+  /* min-width: 100%; */
+}
+
+@media (max-width: 1280px) {
+  .header {
+    min-height: 128px;
+    }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    min-height: 128px;
+    }
+}
+
+@media (max-width: 768px) {
+  .header {
+    min-height: 106px;
+    }
 }

@@ -1,4 +1,6 @@
 .header__links {
+  display: flex;
+  gap: 18px;
   position: absolute;
   top: 46px;
   right: 48px;

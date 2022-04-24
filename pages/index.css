@@ -1,5 +1,5 @@
 @import url(../vendor/normalize.css);
-@import url(../fonts/fonts.css);
+@import url(../vendor/fonts.css);
 
 @import url(../blocks/root/root.css);
 @import url(../blocks/page/page.css);
@@ -49,21 +49,27 @@
 /* min 1280
 min 1024 max 1280
 body 100%max-width @minw 1280px */
+/* @media (min-width: 1024px) and (max-width: 1279.99px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+
+}
+
+@media (max-width: 767.99px) {
+
+} */
 
 
 
-
-
+/* ВТОРОЙ МАКЕТ ВТОРОЙ МАКЕТ ВТОРОЙ МАКЕТ ВТОРОЙ МАКЕТ ВТОРОЙ МАКЕТ ВТОРОЙ МАКЕТ ВТОРОЙ МАКЕТ ВТОРОЙ МАКЕТ */
 @media (max-width: 1280px) {
 
-  .page {
-    max-width: 1024px;
-  }
 
-  .lead__image {
-    width: 928px;
-    height: 580px;
-  }
+
+
+
 
   .photo-grid {
     grid-template-rows: repeat(4, 1fr);
@@ -76,43 +82,62 @@ body 100%max-width @minw 1280px */
     height: 225px;
   }
 
-  .cover {
-    width: 1024px;
-    height: 640px;
-    padding: 12px;
-  }
-  .cover__background {
-    width: 1024px;
-    height: 640px;
-    left: 0;
+  .intro {
+    max-width: 928px;
+    /* padding: 92px 0; */
   }
 
-  .cover__overlay {
-    width: 1024px;
-    height: 640px;
-    left: 0;
+  .intro__title {
+    width: 690px;
+    height: 58px;
+
   }
 
-  /* .lead {
-    max-width: 1024px;
+  .place {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    max-width: 984px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    gap: 48px 32px;
   }
-  .header {
-    height: 128px;
-  } */
+
+  .place__title {
+    width: 440px;
+  }
+
+  .place__paragraph {
+    width: 456px;
+    font-size: 18px;
+    margin: 0 0 26px;
+  }
+
+  .place__image {
+    height: 440px;
+    width: 440px;
+  }
+
 }
 
 
 
 
-
+/* ТРЕТИЙ МАКЕТ ТРЕТИЙ МАКЕТ ТРЕТИЙ МАКЕТ ТРЕТИЙ МАКЕТ ТРЕТИЙ МАКЕТ ТРЕТИЙ МАКЕТ ТРЕТИЙ МАКЕТ ТРЕТИЙ МАКЕТ  */
 @media (max-width: 1024px) {
-  .page {
-    max-width: 768px;
-  }
 
-  .lead__image {
-    width: 768px;
-    height: 480px;
+
+
+  .header__logo {
+  width: 176px;
+  height: 52px;
+  position: absolute;
+  top: 28px;
+  left: 24px;
+}
+
+  .lead__caption {
+    padding-left: 24px;
   }
 
   .photo-grid {
@@ -128,33 +153,107 @@ body 100%max-width @minw 1280px */
     height: 264px;
   }
 
-  .cover {
-    width: 768px;
-    height: 480px;
-    padding: 12px;
-  }
-  .cover__background {
-    width: 768px;
-    height: 480px;
+  .intro {
+    max-width: 720px;
+    padding: 92px 0;
   }
 
-  .cover__overlay {
-    width: 768px;
-    height: 480px;
+  .place {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    max-width: 984px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    gap: 48px 28px;
   }
+
+  .place__title {
+    width: 340px;
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+.place__paragraph {
+  width: 352px;
+  font-size: 16px;
+  margin: 0 0 25px;
+}
+
+.place__image {
+  height: 340px;
+  width: 340px;
 }
 
 
 
 
 
+}
+
+
+
+
+/* ЧЕТВЕРТЫЙ МАКЕТ МОБИЛЬНЫЙ ЧЕТВЕРТЫЙ МАКЕТ МОБИЛЬНЫЙ ЧЕТВЕРТЫЙ МАКЕТ МОБИЛЬНЫЙ ЧЕТВЕРТЫЙ МАКЕТ МОБИЛЬНЫЙ */
 @media (max-width: 768px) {
-  .page {
-    max-width: 320px;
+
+
+
+
+  .header__logo {
+    width: 142px;
+    height: 42px;
+    top: 16px;
+    left: 16px;
   }
-  .lead__image {
-    width: 320px;
-    height: 200px;
+
+  .header__links {
+    top: 30px;
+    right: 16px;
+  }
+
+  .header__link {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .lead__title {
+    font-size: 40px;
+    line-height: 44px;
+    width: 288px;
+    height: 88px;
+  }
+
+  .lead__subtitle {
+    width: 288px;
+    height: 40px;
+    margin: 32px auto 64px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  
+
+  .lead__caption {
+    padding-left: 16px;
+  }
+
+  .intro {
+    max-width: 288px;
+    padding: 92px 0;
+  }
+
+  .intro__title {
+    width: 288px;
+    height: 70px;
+    font-size: 32px;
+    line-height: 35px;
+    margin: 0;
+  }
+
+  .intro__text {
+    width: 288px;
+    height: 522px;
   }
 
   .photo-grid {
@@ -169,6 +268,65 @@ body 100%max-width @minw 1280px */
     width: 288px;
     height: 216px;
   }
+
+  .place {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(1, auto);
+    max-width: 984px;
+    padding-bottom: 50px;
+    gap: 32;
+  }
+
+  .place__item_website {
+    padding-left: 16px;
+  }
+
+  .place__title {
+    width: 288px;
+    font-size: 32px;
+    line-height: 35px;
+    padding-left: 16px;
+  }
+
+  .place__paragraph {
+    width: 288px;
+    font-size: 18px;
+    margin: 0 0 25px;
+    padding-left: 16px;
+  }
+
+  .place__image {
+    width: 320px;
+    height: 320px;
+  }
+
+
+
+
+
+
+  .footer {
+    height: 398px;
+    padding: 0 16px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 32px;
+    justify-content: end;
+    /* TODO */
+  }
+
+  .footer__link {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .footer__copyright {
+    line-height: 14px;
+    margin: 0;
+    margin-top: 48px;
+  }
+      /* TODO */
+
 
 }
 
@@ -182,34 +340,6 @@ body 100%max-width @minw 1280px */
 
 
 
-
-
-
-
-
-/* @media screen and (max-width: 425px) {
-  .page {
-    max-width: 320px;
-  }
-
-  .lead__image {
-    width: 320px;
-    height: 200px;
-  }
-
-  .photo-grid {
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-columns: repeat(1, 1fr);
-    gap: 12px;
-    padding: 0 16px 92px;
-
-  }
-
-  .photo-grid__item {
-    width: 288px;
-    height: 216px;
-  }
-} */
 
 
 
