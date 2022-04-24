@@ -230,9 +230,10 @@ body 100%max-width @minw 1280px */
     margin: 32px auto 64px;
     font-size: 16px;
     line-height: 20px;
+    
   }
 
-  
+
 
   .lead__caption {
     padding-left: 16px;
