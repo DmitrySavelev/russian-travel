@@ -1,7 +1,10 @@
 .footer {
-  height: 134px;
-  padding: 0 48px 24px;
-  display: flex;
-  align-items: flex-end;
-  column-gap: 18px;
+  min-height: 134px;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
 }

@@ -5,3 +5,10 @@
   top: 46px;
   right: 48px;
 }
+
+@media (max-width: 767px) {
+  .header__links {
+    top: 30px;
+    right: 16px;
+  }
+}
