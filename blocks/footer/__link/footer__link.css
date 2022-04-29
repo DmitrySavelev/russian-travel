@@ -1,10 +1,14 @@
 .footer__link {
-  height: 18px;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #fff;
   text-decoration: none;
+}
+
+.footer__link:hover {
+  color: #B8986B;
+  transition: 0.15s color ease ;
 }
 
 @media (max-width: 767px) {

@@ -8,7 +8,8 @@
 }
 
 .header__link:hover {
-  text-decoration: underline;
+  color: #B8986B;
+  transition: 0.15s color ease ;
 }
 
 @media (max-width: 767px) {

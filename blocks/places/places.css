@@ -1,5 +1,7 @@
 .places {
-  padding: 92px 148px;
+  width: 984px;
+  margin: 0 auto;
+  padding: 92px 0;
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -7,13 +9,15 @@
 
 @media (max-width: 1279px) {
   .places {
-    padding: 92px 48px;
+    width: 928px;
   }
 }
 
 @media (max-width: 1023px) {
   .places {
-    padding: 92px 24px;
+    padding: 88px 0;
+    width: 720px;
+    gap: 73px;
   }
 }
 
@@ -21,5 +25,6 @@
   .places {
     padding: 65px 0;
     gap: 50px;
+    width: 100%;
   }
 }
