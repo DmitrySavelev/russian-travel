@@ -5,15 +5,3 @@
   display: flex;
   gap: 18px;
 }
-
-@media (max-width: 1023px) {
-  .header__links {
-
-  }
-}
-
-@media (max-width: 767px) {
-  .header__links {
-    
-  }
-}
